@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+:root {
+  --primary: #4a6bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --white: #ffffff;
+  --header-overlay: rgba(0, 10, 40, 0.85);
+}
+
+/* Modern Body Background */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+ background: linear-gradient(#fff3cdde, #0a58ca29), url(https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1800&q=80) center / cover fixed no-repeat;
+
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  color: #2d3748;
+  line-height: 1.6;
+}
+
+/* Professional Header Background */
+.dashboard-header {
+  color: var(--white);
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Header Content Styling */
+.welcome-box {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  margin-top:20px ; 
+}
+
+.welcome-box h2 {
+  font-family: 'Poppins', sans-serif; /* Changed font */
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.5px;
+  text-align: center; /* Center align */
+  margin-left: 500px ;
+  
+}
+
+
+#last-login {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.9rem;
+  margin-left: 500px ;
+}
+
+/* Main Content Area */
+.dashboard-container {
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+  margin: -3rem auto 2rem;
+  padding: 2rem;
+  position: relative;
+  width: 90%;
+  max-width: 1400px;
+}
+
+/* Feature Cards with Professional Hover */
+.feature-card {
+  background: var(--white);
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  overflow: hidden;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary);
+}
+
+/* Professional Button Styles */
+.btn {
+  border-radius: 6px;
+  font-weight: 500;
+  padding: 0.5rem 1.25rem;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-primary:hover {
+  background-color: #3a5bef;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(74, 107, 255, 0.3);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+  }
+  
+  .dashboard-header {
+    padding: 1.5rem 0;
+    text-align: center;
+  }
+  
+  .dashboard-container {
+    margin-top: -1.5rem;
+    padding: 1.5rem;
+  }
+}
+
+/* Subtle Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.feature-card {
+  animation: fadeIn 0.4s ease-out forwards;
+  opacity: 0;
+}
+
+.feature-card:nth-child(1) { animation-delay: 0.1s; }
+.feature-card:nth-child(2) { animation-delay: 0.2s; }
+/* Continue for all cards */

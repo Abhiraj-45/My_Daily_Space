@@ -1,0 +1,86 @@
+@charset "UTF-8";/* Main table styling */
+.table-responsive {
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+.table thead th {
+    border-bottom-width: 1px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    color: #6c757d;
+}
+
+/* Type badges */
+.badge.bg-success, .badge.bg-danger {
+    padding: 0.35em 0.65em;
+    font-size: 0.75em;
+    font-weight: 600;
+}
+
+/* Form styling */
+.btn-group .btn {
+    flex: 1;
+}
+
+/* Dynamic category selection */
+optgroup {
+    font-weight: normal;
+    font-style: normal;
+}
+
+optgroup[label] {
+    display: none;
+}
+
+optgroup[label="Income"].income-options,
+optgroup[label="Expense"].expense-options {
+    display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .table-responsive {
+        border: 1px solid #dee2e6;
+    }
+    
+    .table thead {
+        display: none;
+    }
+    
+    .table tr {
+        display: block;
+        margin-bottom: 1rem;
+        border: 1px solid #dee2e6;
+        border-radius: 0.25rem;
+    }
+    
+    .table td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.75rem;
+        border-bottom: 1px solid #dee2e6;
+    }
+    
+    .table td:before {
+        content: attr(data-label);
+        font-weight: bold;
+        margin-right: 1rem;
+    }
+    
+    .table td:last-child {
+        border-bottom: 0;
+    }
+    
+    .table td .btn {
+        margin: 0.25rem 0;
+        width: 100%;
+    }
+}

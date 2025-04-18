@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/* Container Box */
+.container {
+    background: white;
+    padding: 35px 40px;
+    margin-top: 50px;
+    width: 90%;
+    max-width: 750px;
+    border-radius: 18px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-3px);
+}
+
+/* Headings */
+h2, h3 {
+    text-align: center;
+    color: #004d40;
+    margin-bottom: 10px;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    margin-top: 15px;
+    display: block;
+    color: #004d40;
+}
+
+/* Input Fields */
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 20px;
+    border: 1px solid #80cbc4;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color:#EDF7F6;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #26a69a;
+    outline: none;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background-color: #00796b;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #004d40;
+}
+
+/* Status Messages */
+.success {
+    color: #2e7d32;
+    font-weight: bold;
+    text-align: center;
+}
+
+.error {
+    color: #c62828;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Separator */
+hr {
+    margin: 30px 0;
+    border: 0;
+    border-top: 1px solid #b2dfdb;
+}
+
+/* Notes List */
+.notes-list {
+    margin-top: 25px;
+}
+
+/* Each Note Card */
+.note-card {
+    background-color: #ffffff;
+    padding: 18px;
+    margin-bottom: 20px;
+    border-left: 6px solid #00897b;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: box-shadow 0.3s;
+}
+
+.note-card:hover {
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.note-card h4 {
+    margin: 0 0 10px;
+    color: #00695c;
+}
+
+.note-card p {
+    margin: 0 0 8px;
+    color: #424242;
+    line-height: 1.5;
+}
+
+.note-card small {
+    font-size: 12px;
+    color: #757575;
+}
+
+/* Delete Button */
+.note-card-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+
+.delete-btn {
+    background-color: #d84315;
+    color: white;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+    background-color: #bf360c;
+}
+
+/* Back link or navigation */
+a {
+    display: inline-block;
+    margin-top: 25px;
+    text-decoration: none;
+    color: #00796b;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
