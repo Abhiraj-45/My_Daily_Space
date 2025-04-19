@@ -12,7 +12,7 @@
 <html>
 <head>
     <title>My To-Do List</title>
-    <link rel="stylesheet" href="css/todo.css">
+    <link rel="stylesheet" href="css/todos.css">
 </head>
 <body>
 <div class="container">
@@ -33,9 +33,10 @@
             <option value="Completed">Completed</option>
         </select>
         <button type="submit">Add Task</button>
-        <a href="dashboard.jsp" class="btn btn-outline-secondary me-2">
-                <i class="bi bi-house-door"></i> Home
-            </a>
+       <button onclick="window.location.href='dashboard.jsp'" class="btn btn-outline-secondary me-2">
+    Home
+</button>
+
     </form>
 
     <table class="todo-table">

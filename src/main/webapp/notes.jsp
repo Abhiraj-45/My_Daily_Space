@@ -60,19 +60,17 @@
                 for (Notes note : notes) {
         %>
             <div class="note-card">
-			    <h4><%= note.getTitle() %></h4>
-			    <p><%= note.getContent() %></p>
-			    <small>Created on: <%= note.getCreatedAt() %></small>
-			    
-  	  <div class="note-card-footer">
-        <form action="note" method="post">
-            <input type="hidden" name="action" value="delete">
-            <input type="hidden" name="id" value="<%= note.getId() %>">
-            <input type="submit" value="Delete" class="delete-btn">
-        </form>
-    </div>
-</div>
-
+                <h4><%= note.getTitle() %></h4>
+                <p><%= note.getContent() %></p>
+                <small>Created on: <%= note.getCreatedAt() %></small>
+                <div class="note-card-footer">
+                    <form action="note" method="post">
+                        <input type="hidden" name="action" value="delete">
+                        <input type="hidden" name="id" value="<%= note.getId() %>">
+                        <input type="submit" value="Delete" class="delete-btn">
+                    </form>
+                </div>
+            </div>
         <%
                 }
             } else {

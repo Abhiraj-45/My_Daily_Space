@@ -2,11 +2,13 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f2f2f2;
+    background: linear-gradient(to bottom right, rgb(255 255 255 / 0%), rgb(230 240 255 / 0%)), url(https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1800&q=80);
     margin: 0;
     padding: 0;
 }
 
 .container {
+	background: linear-gradient(to bottom right, rgb(255 255 255), rgb(5 66 157 / 79%)), url(https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1800&q=80);
     width: 90%;
     max-width: 800px;
     margin: 40px auto;
