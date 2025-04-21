@@ -39,7 +39,8 @@
 		%>
 
 		<p style="text-align: center;">
-			Don't have an account? <a href="register.jsp">Register</a>
+			Don't have an account? <a href="index
+			.jsp">Register</a>
 		</p>
 	</div>
 

@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <h1>MY DAILY SPACE</h1>
-        <p>Your personal space for managing notes, goals, mood, and more.</p>
+        <p>Your personal space for managing notes, goals, files, and more.</p>
         <nav class="nav-links">
             <a href="register.jsp">Register</a>
             <a href="login.jsp">Login</a>

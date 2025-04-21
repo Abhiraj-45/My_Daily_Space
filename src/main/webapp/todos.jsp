@@ -33,8 +33,7 @@
             <option value="Completed">Completed</option>
         </select>
         <button type="submit">Add Task</button>
-       <button onclick="window.location.href='dashboard.jsp'" class="btn btn-outline-secondary me-2">
-    Home
+       <button onclick="window.location.href='dashboard.jsp'" class="btn btn-outline-secondary me-2">Home
 </button>
 
     </form>
